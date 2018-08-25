@@ -6,21 +6,21 @@ Demonstrates how to use a Shared Library in Jenkins pipelines. This repository d
 
 1. In Jenkins, go to Manage Jenkins &rarr; Configure System. Under _Global Pipeline Libraries_, add a library with the following settings:
 
-    - Name: `pipeline-library-demo`
+    - Name: `jenkins-pipeline-library`
     - Default version: Specify a Git reference (branch or commit SHA), e.g. `master`
     - Retrieval method: _Modern SCM_
     - Select the _Git_ type
-    - Project repository: `https://github.com/monodot/pipeline-library-demo.git`
+    - Project repository: `https://github.com/sfgroups/jenkins-pipeline-library.git`
     - Credentials: (leave blank)
 
 2. Then create a Jenkins job with the following pipeline (note that the underscore `_` is not a typo):
 
     ```
-    @Library('pipeline-library-demo')_
+    @Library('jenkins-pipeline-library')_
 
     stage('Demo') {
 
-      echo 'Hello World'
+      echo 'Testing Jenkinslib'
    
       sayHello 'Dave'
 
@@ -43,3 +43,6 @@ Finished: SUCCESS
 ```
 
 # jenkins-pipeline-library
+
+
+Took the notes from this website: https://cleverbuilder.com/articles/jenkins-shared-library/
