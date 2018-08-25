@@ -22,7 +22,7 @@ Demonstrates how to use a Shared Library in Jenkins pipelines. This repository d
 
       echo 'Testing Jenkinslib'
    
-      sayHello 'Dave'
+      sayHello 'Jenkins Pipeline Test Script'
 
     }
     ```
@@ -35,7 +35,7 @@ This will output the following from the build:
 [Pipeline] echo
 Hello world
 [Pipeline] echo
-Hello, Dave.
+Hello, Jenkins Pipeline Test Script.
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] End of Pipeline
