@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="groovy-3.0.0-alpha-3" level="application" />
+    <orderEntry type="library" name="groovy-2.5.2" level="application" />
   </component>
 </module>
