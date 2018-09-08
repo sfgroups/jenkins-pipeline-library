@@ -45,7 +45,7 @@ node {
     stage('Create Ansbile file'){
         writeFile file: playbook_file, text: playbook
         writeFile file: hosts_file, text: hosts.trim()
-        writeFile file: valut_file, text: 'sibi123'
+        writeFile file: valut_file, text: 'test'
         dir ('group_vars') {
             writeFile file:'all', text: all.trim()
         }
