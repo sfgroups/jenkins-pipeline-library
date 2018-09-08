@@ -1,0 +1,21 @@
+---
+- hosts: example
+  gather_facts: no
+  vars:
+    versionl: "{{ version }}"
+    pathl: "{{ installpath }}"
+  tasks:
+    - name: 'check parm is null or invalid' 
+      fail: msg="Please enter correct Params"
+      when: versionl is not defined or pathl is not defined
+
+    - debug:
+        msg: "versionl {{ versionl }}"
+
+    - debug:
+        msg: "Path {{ pathl }}"
+#
+#    - name: print user
+#      file:
+#        path: /tmp/abc
+#        state: touch
