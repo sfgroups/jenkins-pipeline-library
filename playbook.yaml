@@ -1,14 +1,16 @@
 ---
-- hosts: example
+- hosts: 127.0.0.1
+  connection: local
   gather_facts: no
   vars:
     mystr: "This is the long string. With a url. http://example.org/12345"
     url: 'http://www.sfgroups/pkg/abg.gz'
     file_name: "{{ url | basename }}"
   pre_tasks:
-  - name: Convert entered Symfony environment to lowercase
+  - name: Extract the substring using regex
     set_fact:
       substr: "{{ mystr  }}"
   tasks:
-  - debug:
+  - name: print debug message
+    debug:
       msg="{{ substr }} - {{ file_name }}"
