@@ -1,0 +1,14 @@
+---
+- hosts: example
+  gather_facts: no
+  vars:
+    mystr: "This is the long string. With a url. http://example.org/12345"
+    url: 'http://www.sfgroups/pkg/abg.gz'
+    file_name: "{{ url | basename }}"
+  pre_tasks:
+  - name: Convert entered Symfony environment to lowercase
+    set_fact:
+      substr: "{{ mystr  }}"
+  tasks:
+  - debug:
+      msg="{{ substr }} - {{ file_name }}"
