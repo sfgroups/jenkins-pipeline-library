@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579389656436</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add clouser">
+      <created>1579391349742</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1579391349742</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +251,8 @@
     <MESSAGE value="adding new code" />
     <MESSAGE value="added new stage" />
     <MESSAGE value="update git stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="update git stage" />
+    <MESSAGE value="add clouser" />
+    <option name="LAST_COMMIT_MESSAGE" value="add clouser" />
   </component>
   <component name="masterDetails">
     <states>
