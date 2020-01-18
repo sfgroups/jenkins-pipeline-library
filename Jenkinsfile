@@ -12,4 +12,8 @@
       def branchName = scmVars?.GIT_BRANCH
        println "Branch Name : ${branchName}"
      }
+
+     stage('foo') {
+         currentBuild.description = "Some text here."
+       }
  }
