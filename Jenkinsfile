@@ -13,9 +13,11 @@
        println "Branch Name : ${branchName}"
      }
 
-     stage('stus description') {
+     stage('GIT status') {
+        def commitNumber = sh(returnStdout: true, script: "git rev-list HEAD --count")?.trim()
+        def LastCommitLog = sh(returnStdout: true, script: "git log --oneline|head -1")?.trim()
         def status=sh(returnStdout: true, script: "git show --oneline -s")?.trim()
-         currentBuild.description = "${status}"
+         currentBuild.description = "${commitNumber} - ${status}"
 /*
          git show --format="%H, %cn, %ce, %s" --no-patch
          git rev-parse HEAD
