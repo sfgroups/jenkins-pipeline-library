@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56d17d07-b6d9-48d4-a263-4b6ab97a6a90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/decalrative_pipeline/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripted_piplines/batch_status.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jenkins-pipeline-library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jenkins-pipeline-library.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkins-ansible.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/scripted_piplines/Jenkins-ansible.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile-userinput" beforeDir="false" afterPath="$PROJECT_DIR$/decalrative_pipeline/Jenkinsfile-userinput" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-inside-example.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/scripted_piplines/docker-inside-example.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playbook.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/playbook.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars/getNodeIP.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/getNodeIP.groovy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536439556682</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding new code">
+      <created>1579387916996</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1579387916996</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,13 +205,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added library" />
     <MESSAGE value="added get ip line" />
     <MESSAGE value="added get ip library" />
     <MESSAGE value="added sample pipeline for docker" />
     <MESSAGE value="added playboo sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="added playboo sample" />
+    <MESSAGE value="adding new code" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding new code" />
   </component>
   <component name="masterDetails">
     <states>
