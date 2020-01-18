@@ -13,7 +13,13 @@
        println "Branch Name : ${branchName}"
      }
 
-     stage('foo') {
-         currentBuild.description = "Some text here."
+     stage('stus description') {
+        def status=sh(returnStdout: true, script: "git show --oneline -s")?.trim()
+         currentBuild.description = "${status}"
+/*
+         git show --format="%H, %cn, %ce, %s" --no-patch
+         git rev-parse HEAD
+         git show --oneline -s
+         */
        }
  }
