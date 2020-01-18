@@ -22,6 +22,17 @@
          git show --format="%H, %cn, %ce, %s" --no-patch
          git rev-parse HEAD
          git show --oneline -s
+         git log --oneline|head -1
          */
        }
+
+       def stage(String label, Closure cl) {
+         println "The stage is ${label}"
+         cl()
+         println "Exiting the stage"
+       }
+
+       stage('Say Hello World') {
+         println 'Hello World'
+
  }

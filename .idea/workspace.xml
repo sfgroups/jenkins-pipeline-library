@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56d17d07-b6d9-48d4-a263-4b6ab97a6a90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -210,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579389043019</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update git stage">
+      <created>1579389656436</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1579389656436</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +243,8 @@
     <MESSAGE value="added playboo sample" />
     <MESSAGE value="adding new code" />
     <MESSAGE value="added new stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new stage" />
+    <MESSAGE value="update git stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="update git stage" />
   </component>
   <component name="masterDetails">
     <states>
