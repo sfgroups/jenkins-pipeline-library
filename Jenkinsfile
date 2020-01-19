@@ -1,5 +1,15 @@
- node
- {
+ #!/bin/groovy
+ def stage(String label, Closure cl) {
+     println "The stage is ${label}"
+     cl()
+     println "Exiting the stage"
+ }
+ node {
+
+     stage('Docker Tag'){
+         println "my-image:${env.BUILD_ID}"
+     }
+
      stage('checkout'){
          git url: 'https://github.com/sfgroups/jenkins-pipeline-library.git'
         // sh 'printenv|sort'
@@ -26,13 +36,15 @@
          */
        }
 
-       def stage(String label, Closure cl) {
-         println "The stage is ${label}"
-         cl()
-         println "Exiting the stage"
+   stage('Example') {
+       if (env.BRANCH_NAME == 'master') {
+           echo 'I only execute on the master branch'
+       } else {
+           echo 'I execute elsewhere'
        }
+   }
 
-       stage('Say Hello World') {
-         println 'Hello World'
-}
+    stage('Say Hello World') {
+     println 'Hello World'
+    }
  }
