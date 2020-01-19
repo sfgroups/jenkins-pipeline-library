@@ -1,10 +1,18 @@
- #!/bin/groovy
+#!/usr/bin/env groovy
+@Library('jenkins-pipeline-library')_
+
  def stage(String label, Closure cl) {
      println "The stage is ${label}"
      cl()
      println "Exiting the stage"
  }
  node {
+
+     stage('Zero') {
+         when(BRANCH_NAME != 'master') {
+             echo 'Performing steps of stage Zero'
+         }
+     }
 
      stage('Docker Tag'){
          println "my-image:${env.BUILD_ID}"
