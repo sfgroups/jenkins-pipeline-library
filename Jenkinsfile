@@ -1,5 +1,5 @@
-#!/usr/bin/env groovy
-@Library('jenkins-pipeline-library')_
+
+//@Library('jenkins-pipeline-library')_
 
  def stage(String label, Closure cl) {
      println "The stage is ${label}"
