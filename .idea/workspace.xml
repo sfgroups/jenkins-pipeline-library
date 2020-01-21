@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56d17d07-b6d9-48d4-a263-4b6ab97a6a90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ansible/restcall_get.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -244,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579401999252</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="removed #!">
+      <created>1579402049917</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1579402049917</updated>
+    </task>
+    <task id="LOCAL-00020" summary="skipped stage">
+      <created>1579402108050</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1579402108050</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,7 +292,9 @@
     <MESSAGE value="added }" />
     <MESSAGE value="addded docker tag" />
     <MESSAGE value="added when code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added when code" />
+    <MESSAGE value="removed #!" />
+    <MESSAGE value="skipped stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="skipped stage" />
   </component>
   <component name="masterDetails">
     <states>

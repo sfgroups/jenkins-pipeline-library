@@ -1,0 +1,52 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  gather_facts: no
+  vars:
+    mystr: "This is the long string. With a url. http://example.org/12345"
+    url: 'http://www.sfgroups/pkg/abg.gz'
+    file_name: "{{ url | basename }}"
+    rest_url01: 'http://api.open-notify.org/astros.json'
+    rest_url02: 'https://my-json-server.typicode.com/typicode/demo/comments'
+    username: 'test'
+    password: 'test'
+    api_version: 'v1'
+  pre_tasks:
+    - name: Extract the substring using regex
+      set_fact:
+        substr: "{{ mystr  }}"
+  tasks:
+    - name: print debug message
+      debug:
+        msg="{{ substr }} - {{ file_name }}"
+
+    - name: make REST call
+      uri:
+        url: "{{ rest_url02 }}"
+        return_content: yes
+      register: message
+
+    - name: Respone from restapi
+      debug:
+        msg="{{ message }}"
+
+    - name: REST API POST
+      uri:
+        url: "{{ rest_url02 }}"
+        url_password: "{{ username }}"
+        url_username: "{{ password }}"
+        method: POST
+        #body: "{{ lookup('file','issue.json') }}"
+        force_basic_auth: yes
+        validate_certs: false
+        body_format: json
+        body: >
+          {"mainlevel":{"subkey":"finalvalue"}}
+        headers:
+          X-Avi-Version: "{{ api_version }}"
+        status_code: 201
+      register: message
+
+    - name: Respone from restapi
+      debug:
+        msg="{{ message }}"

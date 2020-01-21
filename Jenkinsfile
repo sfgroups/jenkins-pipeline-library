@@ -8,11 +8,7 @@
  }
  node {
 
-  /*   stage('Zero') {
-         when(BRANCH_NAME != 'master') {
-             echo 'Performing steps of stage Zero'
-         }
-     }*/
+  K
 
      stage('Docker Tag'){
          println "my-image:${env.BUILD_ID}"
