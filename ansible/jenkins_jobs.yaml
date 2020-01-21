@@ -1,0 +1,21 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  gather_facts: no
+  vars:
+    url: 'http://192.168.16.7:8080'
+    file_name: "{{ url | basename }}"
+    username: 'test'
+    password: 'test'
+
+  tasks:
+    - name: make REST call
+      jenkins_job_info:
+        url: "{{ url }}"
+        token: 126df5c60d66c66e3b75b11104a16a8a
+        validate_certs: False
+      register: message
+
+    - name: Respone from restapi
+      debug:
+        msg="{{ message }}"
