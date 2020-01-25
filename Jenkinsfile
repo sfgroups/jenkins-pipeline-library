@@ -8,8 +8,6 @@
  }
  node {
 
-  K
-
      stage('Docker Tag'){
          println "my-image:${env.BUILD_ID}"
      }

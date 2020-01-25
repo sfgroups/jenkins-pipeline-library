@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56d17d07-b6d9-48d4-a263-4b6ab97a6a90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ansible/restcall_get.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vars/containers/podman.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579402108050</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added restapi script">
+      <created>1579566296297</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1579566296297</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,7 +301,8 @@
     <MESSAGE value="added when code" />
     <MESSAGE value="removed #!" />
     <MESSAGE value="skipped stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="skipped stage" />
+    <MESSAGE value="added restapi script" />
+    <option name="LAST_COMMIT_MESSAGE" value="added restapi script" />
   </component>
   <component name="masterDetails">
     <states>
