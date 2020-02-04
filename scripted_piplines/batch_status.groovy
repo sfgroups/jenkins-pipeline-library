@@ -1,5 +1,11 @@
 
 node {
+    stage('postbuild display sfgroups link') {
+        String HTTP_URL= "www.sfgroups.com"
+        description = "<a href='${HTTP_URL}'</a>" + "sfgroups"
+        manager.addShortText(description, "black", "white", "1.5px", "white");
+    }
+    
     stage ('Post-Build') {
        /*manager.addShortText("VERSION Black on Lime Green", "black", "limegreen", "0px", "white")
         manager.addShortText("OBSOLETE YellowGrey5pxGrey", "yellow", "grey", "5px", "grey")
