@@ -46,3 +46,5 @@ Finished: SUCCESS
 
 
 Took the notes from this website: https://cleverbuilder.com/articles/jenkins-shared-library/
+
+https://howtodoinjava.com/library/jaxrs-client-httpclient-get-post/
