@@ -1,3 +1,8 @@
+Refrence:
+https://github.com/hoto/jenkinsfile-examples
+https://www.codurance.com/publications/2019/05/30/accessing-and-dumping-jenkins-credentials
+
+
 # jenkins-pipeline-library
 
 Demonstrates how to use a Shared Library in Jenkins pipelines. This repository defines a single function, `sayHello`, which will echo a greeting.
