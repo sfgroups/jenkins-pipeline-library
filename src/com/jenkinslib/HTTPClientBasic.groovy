@@ -106,4 +106,41 @@ class HTTPClientBasic {
         }
         return response
     }
+    
+      public final static void requestTimestamp() throws Exception {
+        SSLConnectionSocketFactory csf =
+                new SSLConnectionSocketFactory(createSslCustomContext(), NoopHostnameVerifier.INSTANCE)
+        CloseableHttpClient httpclient = HttpClients.custom().setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0").setSSLSocketFactory(csf).build();
+
+        try {
+            // Create a local instance of cookie store
+            BasicCookieStore cookieStore = new BasicCookieStore();
+            // Create local HTTP context
+            HttpClientContext localContext = HttpClientContext.create();
+            // Bind custom cookie store to the local context
+            localContext.setCookieStore(cookieStore);
+            
+            HttpPost httpPost = new HttpPost(URL);
+            List <NameValuePair> nvps = new ArrayList <NameValuePair>();
+            nvps.add(new BasicNameValuePair("operation","create OnSite report"))
+            nvps.add(new BasicNameValuePair("ReportCurrentStatus","0"))
+            nvps.add(new BasicNameValuePair("cert_type",""))
+          
+
+            httpPost.setEntity(new UrlEncodedFormEntity(nvps));
+            CloseableHttpResponse response = httpclient.execute(httpPost);
+
+            try {
+                System.out.println("----------------------------------------");
+                System.out.println(response.getStatusLine());
+                println EntityUtils.toString( response.getEntity())
+                EntityUtils.consume(response.getEntity());
+            } finally {
+                response.close();
+            }
+        }finally {
+            httpclient.close();
+        }
+    }
+
 }
